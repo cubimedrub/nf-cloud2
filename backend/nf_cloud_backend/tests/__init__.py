@@ -38,13 +38,13 @@ class DbTestCase(unittest.TestCase):
         self.token_default = "defaulttoken"
 
     
-    def headers_default(self):
+    def headers_default(self) -> dict:
         return {
             "X-Token": self.token_default
         }
     
 
-    def headers_admin(self):
+    def headers_admin(self) -> dict:
         return {
             "X-Token": self.token_admin
         }
